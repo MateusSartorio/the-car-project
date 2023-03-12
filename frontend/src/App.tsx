@@ -1,14 +1,10 @@
-import React from 'react';
+import styles from "./App.module.css";
+import { MainInfo } from "./components/MainInfo";
 
-import './App.css';
-import { MainInfo } from './components/MainInfo';
-
-function App() {
+export const App = () => {
   return (
     <div className="App">
         <MainInfo/>
     </div>
   );
 }
-
-export default App;
