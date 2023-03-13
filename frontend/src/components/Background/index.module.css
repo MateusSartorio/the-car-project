@@ -1,0 +1,42 @@
+.background {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+
+    --white_portion_size: 80vh;
+}
+
+.white_portion {
+    background-color: white;
+    height: var(--white_portion_size);
+}
+
+.lanes_portion {
+    position: fixed;
+    top: 0;
+    right: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.solid_yellow {
+    background-color: #fbc518;
+    width: 3vw;
+    height: 100vh;
+}
+
+.dashed_gray {
+    background-color: #e8e8e8;
+    width: 1vw;
+    height: var(--white_portion_size);
+    top: 0;
+}
+
+.black_portion {
+    background-color: black;
+    height: calc(100vh - var(--white_portion_size));
+}
